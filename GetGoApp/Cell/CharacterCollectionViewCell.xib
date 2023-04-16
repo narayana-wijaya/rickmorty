@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Regular.otf">
+            <string>SFProRounded-Regular</string>
+        </array>
+        <array key="SF-Pro-Rounded-Semibold.otf">
+            <string>SFProRounded-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CharacterCollectionViewCell" customModule="GetGoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="193" height="259"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="193" height="259"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZw-Ao-eHx">
+                        <rect key="frame" x="8" y="8" width="177" height="243"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="URb-q3-sld">
+                                <rect key="frame" x="0.0" y="0.0" width="177" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="URb-q3-sld" secondAttribute="height" multiplier="1:1" id="6rQ-qF-uye"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6kH-LO-UEW">
+                                <rect key="frame" x="8" y="185" width="161" height="25.333333333333343"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alb-Hv-sVW">
+                                <rect key="frame" x="8" y="214.33333333333334" width="161" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="alb-Hv-sVW" firstAttribute="centerX" secondItem="ZZw-Ao-eHx" secondAttribute="centerX" id="3Ih-NC-9Y4"/>
+                            <constraint firstAttribute="trailing" secondItem="URb-q3-sld" secondAttribute="trailing" id="58G-Le-utr"/>
+                            <constraint firstItem="6kH-LO-UEW" firstAttribute="centerX" secondItem="ZZw-Ao-eHx" secondAttribute="centerX" id="G3d-Bs-Aky"/>
+                            <constraint firstItem="URb-q3-sld" firstAttribute="leading" secondItem="ZZw-Ao-eHx" secondAttribute="leading" id="SQL-lp-jhA"/>
+                            <constraint firstItem="6kH-LO-UEW" firstAttribute="top" secondItem="URb-q3-sld" secondAttribute="bottom" constant="8" symbolic="YES" id="T1p-fl-jgh"/>
+                            <constraint firstItem="alb-Hv-sVW" firstAttribute="top" secondItem="6kH-LO-UEW" secondAttribute="bottom" constant="4" id="UpC-I9-5cQ"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="alb-Hv-sVW" secondAttribute="bottom" constant="8" id="YDq-Er-3Bm"/>
+                            <constraint firstItem="alb-Hv-sVW" firstAttribute="leading" secondItem="ZZw-Ao-eHx" secondAttribute="leading" constant="8" id="kkW-WD-Yd9"/>
+                            <constraint firstItem="URb-q3-sld" firstAttribute="top" secondItem="ZZw-Ao-eHx" secondAttribute="top" id="vDx-lU-Dlk"/>
+                            <constraint firstItem="6kH-LO-UEW" firstAttribute="leading" secondItem="ZZw-Ao-eHx" secondAttribute="leading" constant="8" id="w4U-6t-mB8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ZZw-Ao-eHx" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="FQi-RX-y88"/>
+                <constraint firstItem="ZZw-Ao-eHx" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="H3a-M7-3oU"/>
+                <constraint firstItem="ZZw-Ao-eHx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="QLA-kl-KfI"/>
+                <constraint firstItem="ZZw-Ao-eHx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="chs-41-o8a"/>
+            </constraints>
+            <size key="customSize" width="193" height="259"/>
+            <connections>
+                <outlet property="bgView" destination="ZZw-Ao-eHx" id="6I0-iB-bgH"/>
+                <outlet property="imageView" destination="URb-q3-sld" id="Awl-z7-N9e"/>
+                <outlet property="nameLabel" destination="6kH-LO-UEW" id="WwH-Cl-pfU"/>
+                <outlet property="speciesLabel" destination="alb-Hv-sVW" id="KMv-0F-j7T"/>
+            </connections>
+            <point key="canvasLocation" x="183.96946564885496" y="60.91549295774648"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

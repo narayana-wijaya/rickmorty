@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Regular.otf">
+            <string>SFProRounded-Regular</string>
+        </array>
+        <array key="SF-Pro-Rounded-Semibold.otf">
+            <string>SFProRounded-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationDetailViewController" customModule="GetGoApp" customModuleProvider="target">
+            <connections>
+                <outlet property="dateCreatedLabel" destination="etD-eJ-b90" id="WZb-C5-mql"/>
+                <outlet property="dimensionLabel" destination="HZe-qn-bBH" id="A7h-w8-htE"/>
+                <outlet property="headerView" destination="Dhb-n2-9AT" id="EJ9-cl-IQP"/>
+                <outlet property="nameLabel" destination="eof-KV-tgf" id="OTM-70-uKh"/>
+                <outlet property="tableView" destination="Ume-zd-W8P" id="5jp-wg-gml"/>
+                <outlet property="typeLabel" destination="NFQ-rc-8Fn" id="Y6X-qB-rYd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ume-zd-W8P">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ume-zd-W8P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4i5-Za-96M"/>
+                <constraint firstItem="Ume-zd-W8P" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Vvf-Dt-upN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ume-zd-W8P" secondAttribute="bottom" id="uyK-ef-TXE"/>
+                <constraint firstItem="Ume-zd-W8P" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wZ2-yp-aBg"/>
+            </constraints>
+            <point key="canvasLocation" x="79" y="-12"/>
+        </view>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dhb-n2-9AT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="239"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eof-KV-tgf">
+                    <rect key="frame" x="20" y="20" width="353" height="39"/>
+                    <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oB-VV-ozq">
+                    <rect key="frame" x="242.33333333333337" y="75" width="54" height="17"/>
+                    <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="13:08, 10 November 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etD-eJ-b90">
+                    <rect key="frame" x="242.33333333333337" y="100" width="130.66666666666663" height="15"/>
+                    <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFQ-rc-8Fn">
+                    <rect key="frame" x="19.999999999999996" y="75" width="48.666666666666657" height="24"/>
+                    <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dimension" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ls7-al-dfn">
+                    <rect key="frame" x="20" y="115" width="75.333333333333329" height="19.333333333333343"/>
+                    <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dimension" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZe-qn-bBH">
+                    <rect key="frame" x="20" y="142.33333333333334" width="75.333333333333329" height="19.333333333333343"/>
+                    <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Residents" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADC-ww-Zc1">
+                    <rect key="frame" x="20" y="199" width="88" height="24"/>
+                    <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="NFQ-rc-8Fn" firstAttribute="leading" secondItem="Dhb-n2-9AT" secondAttribute="leading" constant="20" symbolic="YES" id="3eO-Bq-MbA"/>
+                <constraint firstItem="HZe-qn-bBH" firstAttribute="leading" secondItem="Dhb-n2-9AT" secondAttribute="leading" constant="20" symbolic="YES" id="3t3-A7-SnR"/>
+                <constraint firstItem="ls7-al-dfn" firstAttribute="leading" secondItem="Dhb-n2-9AT" secondAttribute="leading" constant="20" symbolic="YES" id="4cf-Vh-Cil"/>
+                <constraint firstItem="etD-eJ-b90" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NFQ-rc-8Fn" secondAttribute="trailing" constant="8" symbolic="YES" id="5v9-S9-caZ"/>
+                <constraint firstItem="eof-KV-tgf" firstAttribute="centerX" secondItem="Dhb-n2-9AT" secondAttribute="centerX" id="O1V-Mq-zLh"/>
+                <constraint firstAttribute="bottom" secondItem="ADC-ww-Zc1" secondAttribute="bottom" constant="16" id="Umy-Wv-s16"/>
+                <constraint firstItem="NFQ-rc-8Fn" firstAttribute="top" secondItem="eof-KV-tgf" secondAttribute="bottom" constant="16" id="VyZ-05-cwa"/>
+                <constraint firstItem="HZe-qn-bBH" firstAttribute="top" secondItem="ls7-al-dfn" secondAttribute="bottom" constant="8" id="bVu-Ou-ig9"/>
+                <constraint firstItem="eof-KV-tgf" firstAttribute="leading" secondItem="Dhb-n2-9AT" secondAttribute="leading" constant="20" id="clT-bv-QXI"/>
+                <constraint firstItem="etD-eJ-b90" firstAttribute="top" secondItem="3oB-VV-ozq" secondAttribute="bottom" constant="8" symbolic="YES" id="gCG-2d-fI8"/>
+                <constraint firstItem="ls7-al-dfn" firstAttribute="top" secondItem="NFQ-rc-8Fn" secondAttribute="bottom" constant="16" id="msu-cl-paT"/>
+                <constraint firstItem="3oB-VV-ozq" firstAttribute="leading" secondItem="etD-eJ-b90" secondAttribute="leading" id="rSl-1K-fvf"/>
+                <constraint firstItem="3oB-VV-ozq" firstAttribute="top" secondItem="eof-KV-tgf" secondAttribute="bottom" constant="16" id="rvW-8T-Tow"/>
+                <constraint firstAttribute="trailing" secondItem="etD-eJ-b90" secondAttribute="trailing" constant="20" id="sEl-xP-Gs7"/>
+                <constraint firstItem="eof-KV-tgf" firstAttribute="top" secondItem="Dhb-n2-9AT" secondAttribute="top" constant="20" symbolic="YES" id="w6Y-ZC-UPy"/>
+                <constraint firstItem="ADC-ww-Zc1" firstAttribute="leading" secondItem="Dhb-n2-9AT" secondAttribute="leading" constant="20" symbolic="YES" id="yQb-1E-7VT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="741.22137404580144" y="-229.92957746478874"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

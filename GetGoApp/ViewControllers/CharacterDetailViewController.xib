@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Regular.otf">
+            <string>SFProRounded-Regular</string>
+        </array>
+        <array key="SF-Pro-Rounded-Semibold.otf">
+            <string>SFProRounded-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterDetailViewController" customModule="GetGoApp" customModuleProvider="target">
+            <connections>
+                <outlet property="createdLabel" destination="BJd-CM-0Zh" id="dE2-hh-EKv"/>
+                <outlet property="genderImageView" destination="urk-Fo-UZN" id="YGA-L2-XHz"/>
+                <outlet property="genderLabel" destination="aOg-ky-t1e" id="dLp-9T-fll"/>
+                <outlet property="headerView" destination="clC-CM-rTv" id="nQe-Kj-Pef"/>
+                <outlet property="imageView" destination="SRN-Uu-z29" id="WlV-nA-Uz8"/>
+                <outlet property="locationLabel" destination="GX2-gc-heT" id="Dgl-Ow-5lG"/>
+                <outlet property="nameLabel" destination="0mX-DL-Fgk" id="FGp-yV-wNp"/>
+                <outlet property="originLabel" destination="ug2-LY-EYd" id="7lU-EA-pZX"/>
+                <outlet property="speciesLabel" destination="XNp-K1-09l" id="fa5-DC-65b"/>
+                <outlet property="statusImageView" destination="Szj-vx-uvM" id="E5D-Yf-Mw3"/>
+                <outlet property="statusLabel" destination="z4p-xz-ZbY" id="CM5-s1-Ofr"/>
+                <outlet property="tableView" destination="vbp-52-73J" id="Og6-fN-HSe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vbp-52-73J">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vbp-52-73J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9D6-f1-uT7"/>
+                <constraint firstItem="vbp-52-73J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Q9H-mh-jbM"/>
+                <constraint firstItem="vbp-52-73J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hSH-Ch-Yus"/>
+                <constraint firstItem="vbp-52-73J" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="jPa-Nq-MaH"/>
+            </constraints>
+            <point key="canvasLocation" x="-16.030534351145036" y="-12.67605633802817"/>
+        </view>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="clC-CM-rTv">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="446"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SRN-Uu-z29">
+                    <rect key="frame" x="16" y="16" width="160" height="284.33333333333331"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="SRN-Uu-z29" secondAttribute="height" multiplier="9:16" id="420-4l-1hx"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leonardo Da Vinci de Angelo" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mX-DL-Fgk">
+                    <rect key="frame" x="192" y="16.000000000000004" width="168" height="57.333333333333343"/>
+                    <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NLo-jS-xc3">
+                    <rect key="frame" x="192" y="81.333333333333329" width="141.33333333333337" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status: Alive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4p-xz-ZbY">
+                            <rect key="frame" x="0.0" y="3" width="103.33333333333333" height="24"/>
+                            <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Szj-vx-uvM">
+                            <rect key="frame" x="111.33333333333331" y="0.0" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="FrB-3O-u8k"/>
+                                <constraint firstAttribute="width" secondItem="Szj-vx-uvM" secondAttribute="height" multiplier="1:1" id="j6v-jM-qEL"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="B1C-cM-loS">
+                    <rect key="frame" x="192" y="119.33333333333331" width="170.66666666666663" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender: Female" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOg-ky-t1e">
+                            <rect key="frame" x="0.0" y="3" width="132.66666666666666" height="24"/>
+                            <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="urk-Fo-UZN">
+                            <rect key="frame" x="140.66666666666669" y="0.0" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="urk-Fo-UZN" secondAttribute="height" multiplier="1:1" id="QwA-Py-9a7"/>
+                                <constraint firstAttribute="height" constant="30" id="qzg-DN-Jkk"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Species: Mythological Creature" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNp-K1-09l">
+                    <rect key="frame" x="192" y="157.33333333333334" width="112" height="71.666666666666657"/>
+                    <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6i-uu-FRG">
+                    <rect key="frame" x="192" y="261" width="49.666666666666657" height="17"/>
+                    <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJd-CM-0Zh">
+                    <rect key="frame" x="192" y="286" width="27.666666666666657" height="14.333333333333314"/>
+                    <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="z2Q-w0-w0w">
+                    <rect key="frame" x="16" y="320.33333333333331" width="168" height="66.333333333333314"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMN-VS-HEQ">
+                            <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="24"/>
+                            <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label aiueh ao ihaeo o;ae hia;eo  aho;e a " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ug2-LY-EYd">
+                            <rect key="frame" x="0.0" y="28.000000000000004" width="139.66666666666666" height="38.333333333333343"/>
+                            <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="A90-Op-PmL">
+                    <rect key="frame" x="192" y="320.33333333333331" width="168" height="47.333333333333314"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVG-4b-ALO">
+                            <rect key="frame" x="0.0" y="0.0" width="76.666666666666671" height="24"/>
+                            <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GX2-gc-heT">
+                            <rect key="frame" x="0.0" y="28" width="37" height="19.333333333333329"/>
+                            <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLr-Vt-6a6">
+                    <rect key="frame" x="16" y="414" width="71" height="24"/>
+                    <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="BJd-CM-0Zh" firstAttribute="bottom" secondItem="SRN-Uu-z29" secondAttribute="bottom" id="196-vV-Ea4"/>
+                <constraint firstItem="F6i-uu-FRG" firstAttribute="leading" secondItem="A90-Op-PmL" secondAttribute="leading" id="2ri-xL-cwt"/>
+                <constraint firstItem="BJd-CM-0Zh" firstAttribute="top" secondItem="F6i-uu-FRG" secondAttribute="bottom" constant="8" id="7Ba-wP-CmP"/>
+                <constraint firstItem="SRN-Uu-z29" firstAttribute="top" secondItem="clC-CM-rTv" secondAttribute="top" constant="16" id="Cr2-tf-m17"/>
+                <constraint firstItem="SRN-Uu-z29" firstAttribute="leading" secondItem="clC-CM-rTv" secondAttribute="leading" constant="16" id="DgE-h1-8AP"/>
+                <constraint firstItem="0mX-DL-Fgk" firstAttribute="top" secondItem="SRN-Uu-z29" secondAttribute="top" id="EKD-S0-cjt"/>
+                <constraint firstItem="z2Q-w0-w0w" firstAttribute="leading" secondItem="clC-CM-rTv" secondAttribute="leading" constant="16" id="EVh-b5-PSK"/>
+                <constraint firstItem="A90-Op-PmL" firstAttribute="leading" secondItem="z2Q-w0-w0w" secondAttribute="trailing" constant="8" id="FNE-CL-f1X"/>
+                <constraint firstItem="B1C-cM-loS" firstAttribute="leading" secondItem="SRN-Uu-z29" secondAttribute="trailing" constant="16" id="FOL-cw-Tjt"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BJd-CM-0Zh" secondAttribute="trailing" constant="8" id="Hup-4N-6lz"/>
+                <constraint firstAttribute="trailing" secondItem="0mX-DL-Fgk" secondAttribute="trailing" constant="16" id="LON-nB-VRB"/>
+                <constraint firstItem="BLr-Vt-6a6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="z2Q-w0-w0w" secondAttribute="bottom" constant="16" id="Or4-SI-jMy"/>
+                <constraint firstItem="XNp-K1-09l" firstAttribute="leading" secondItem="SRN-Uu-z29" secondAttribute="trailing" constant="16" id="RJ7-YL-oYe"/>
+                <constraint firstItem="B1C-cM-loS" firstAttribute="top" secondItem="NLo-jS-xc3" secondAttribute="bottom" constant="8" id="Wl0-O1-iMh"/>
+                <constraint firstItem="0mX-DL-Fgk" firstAttribute="leading" secondItem="SRN-Uu-z29" secondAttribute="trailing" constant="16" id="XSv-mw-v1o"/>
+                <constraint firstItem="NLo-jS-xc3" firstAttribute="leading" secondItem="SRN-Uu-z29" secondAttribute="trailing" constant="16" id="Xbc-d6-txb"/>
+                <constraint firstItem="F6i-uu-FRG" firstAttribute="leading" secondItem="SRN-Uu-z29" secondAttribute="trailing" constant="16" id="Xhx-Lc-K04"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XNp-K1-09l" secondAttribute="trailing" constant="8" id="Yl7-Mk-Nr9"/>
+                <constraint firstItem="A90-Op-PmL" firstAttribute="top" secondItem="z2Q-w0-w0w" secondAttribute="top" id="ZA5-ql-H29"/>
+                <constraint firstAttribute="trailing" secondItem="A90-Op-PmL" secondAttribute="trailing" constant="16" id="apM-1C-Our"/>
+                <constraint firstAttribute="bottom" secondItem="BLr-Vt-6a6" secondAttribute="bottom" constant="8" id="baZ-cL-1Kl"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="F6i-uu-FRG" secondAttribute="trailing" constant="8" id="ce5-kl-q5O"/>
+                <constraint firstItem="z2Q-w0-w0w" firstAttribute="width" secondItem="A90-Op-PmL" secondAttribute="width" id="doS-YF-oZD"/>
+                <constraint firstItem="XNp-K1-09l" firstAttribute="top" secondItem="B1C-cM-loS" secondAttribute="bottom" constant="8" id="lDp-1Q-5TK"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="B1C-cM-loS" secondAttribute="trailing" constant="8" id="ld2-nr-Ju6"/>
+                <constraint firstItem="z2Q-w0-w0w" firstAttribute="top" secondItem="SRN-Uu-z29" secondAttribute="bottom" constant="20" id="lkQ-Gl-9pS"/>
+                <constraint firstItem="BLr-Vt-6a6" firstAttribute="leading" secondItem="clC-CM-rTv" secondAttribute="leading" constant="16" id="uRV-eg-J16"/>
+                <constraint firstItem="BJd-CM-0Zh" firstAttribute="leading" secondItem="SRN-Uu-z29" secondAttribute="trailing" constant="16" id="x2t-w3-Zrc"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NLo-jS-xc3" secondAttribute="trailing" constant="8" id="xNE-Wp-lCg"/>
+                <constraint firstItem="NLo-jS-xc3" firstAttribute="top" secondItem="0mX-DL-Fgk" secondAttribute="bottom" constant="8" id="xUH-cL-9Qn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="674.80916030534354" y="-285.21126760563379"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

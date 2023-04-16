@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Semibold.otf">
+            <string>SFProRounded-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FilterCollectionViewCell" customModule="GetGoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="126" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="126" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PdK-lu-Air">
+                        <rect key="frame" x="4" y="7.6666666666666679" width="118" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpF-Uf-Z3W">
+                                <rect key="frame" x="0.0" y="8" width="118" height="19"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NpF-Uf-Z3W" firstAttribute="centerX" secondItem="PdK-lu-Air" secondAttribute="centerX" id="Aan-8D-lsQ"/>
+                            <constraint firstItem="NpF-Uf-Z3W" firstAttribute="centerY" secondItem="PdK-lu-Air" secondAttribute="centerY" id="NBz-Ku-bTR"/>
+                            <constraint firstAttribute="height" constant="35" id="UOT-FL-Vh7"/>
+                            <constraint firstItem="NpF-Uf-Z3W" firstAttribute="leading" secondItem="PdK-lu-Air" secondAttribute="leading" id="hSM-h4-toZ"/>
+                            <constraint firstItem="NpF-Uf-Z3W" firstAttribute="top" secondItem="PdK-lu-Air" secondAttribute="top" constant="8" id="lFx-Ic-PtC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="PdK-lu-Air" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Enw-oQ-018"/>
+                <constraint firstAttribute="trailing" secondItem="PdK-lu-Air" secondAttribute="trailing" constant="4" id="HSh-Q7-MX5"/>
+                <constraint firstItem="PdK-lu-Air" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="y1c-XM-uTD"/>
+            </constraints>
+            <size key="customSize" width="126" height="50"/>
+            <connections>
+                <outlet property="containerView" destination="PdK-lu-Air" id="65y-4v-juD"/>
+                <outlet property="titleLabel" destination="NpF-Uf-Z3W" id="gDW-wc-EFq"/>
+            </connections>
+            <point key="canvasLocation" x="135.87786259541986" y="-12.67605633802817"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
